@@ -1,5 +1,5 @@
 """
-Gemma 오픈소스 LLM을 사용한 로컬 챗봇
+Gemma 오픈소스 LLM을 사용한 로컬 GAMJA
 - 완전 무료
 - 네트워크 불필요 (설치 후)
 - 개인정보 보호
@@ -137,9 +137,9 @@ def translate_file(filepath, conversation_history, selected_model):
 
 
 def main():
-    """메인 챗봇 루프"""
+    """메인 GAMJA 루프"""
     print("=" * 60)
-    print("🤖 Gemma 로컬 챗봇에 오신 것을 환영합니다!")
+    print("🤖 Gemma 로컬 GAMJA에 오신 것을 환영합니다!")
     print("   (완전 무료 & 오프라인 작동)")
     print("=" * 60)
     
@@ -187,7 +187,7 @@ def main():
         
         # 종료 명령 확인
         if user_input.lower() in ['종료', 'exit', 'quit']:
-            print("\n챗봇: 안녕히 가세요! 좋은 하루 되세요! 👋")
+            print("\nGAMJA: 안녕히 가세요! 좋은 하루 되세요! 👋")
             break
         
         # 대화 저장
@@ -225,7 +225,7 @@ def main():
             continue
         
         # AI 응답 받기
-        print("\n챗봇: ", end="", flush=True)
+        print("\nGAMJA: ", end="", flush=True)
         ai_response, conversation_history = chat_with_gemma(
             user_input, 
             conversation_history,
